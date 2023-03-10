@@ -1,0 +1,90 @@
+.search-result {
+    display: none;
+}
+
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-item {
+    /* flex: 0 0 auto; */
+    width: 100%;
+}
+
+h3 {
+    padding-bottom: 5px;
+    padding-top: 3px;
+}
+
+.card {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.artist {
+    margin-bottom: 50px;
+    display: inline;
+    height: 250px
+}
+
+.albumcover {
+    width: 100%;
+    display: inline;
+}
+
+.artist-info {
+    max-height: 250px;
+}
+
+
+.footer-spacing {
+    margin-bottom: 1500px;
+}
+
+/* tablet display */
+@media screen and (min-width: 768px) {
+    .search-result {
+        display: inline;
+    }
+
+    .flex-grid {
+        justify-content: space-between;
+    }
+
+    .flex-item {
+        width: 40%;
+    }
+
+    .card {
+        width: 50%;
+        margin-top: 5px;
+    }
+
+    .footer-spacing {
+        margin-bottom: 1000px;
+    }
+}
+
+/* desktop display */
+@media screen and (min-width: 992px) {
+
+    .flex-item {
+        width: 33%;
+    }
+
+    .footer-spacing {
+        margin-bottom: 600px;
+    }
+
+
+    .albumcover {
+        max-height: 300px;
+        max-width: 300px;
+        display: inline;
+    }
+
+}
