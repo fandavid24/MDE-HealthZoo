@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       for (var i = 0; i < lines.length; i++) {
         var line = lines[i].trim();
         if (line !== '') {
-          var values = line.split(' ');
+          var values = line.split(',');
           var task_body = values[0];
           var task_value = values[1];
           var div = document.createElement('div');
