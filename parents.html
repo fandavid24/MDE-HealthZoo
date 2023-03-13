@@ -1,0 +1,46 @@
+<!-- Parent Tab -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HealthZoo - Parents</title>
+</head>
+
+<body>
+    <h1>Welcome to the Parents Page!</h1>
+    <form onsubmit="addTask(); return false;">
+        <label>
+            Task Name:
+            <input type="text" id="task-name">
+        </label>
+        <label>
+            Task Value:
+            <input type="number" id="task-value">
+        </label>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <script>
+        // Get a reference to the child window
+        const childWindow = window.open("child.html");
+
+        // Function to add a task
+        function addTask() {
+            // Get the task name and value
+            const taskName = document.getElementById("task-name").value;
+            const taskValue = document.getElementById("task-value").value;
+
+            // Send the task data to the child window
+            childWindow.postMessage(
+                {
+                    type: "add-task",
+                    name: taskName,
+                    value: taskValue,
+                },
+                "*"
+            );
+        }
+    </script>
+</body>
+
+</html>

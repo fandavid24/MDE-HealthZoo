@@ -1,0 +1,3 @@
+custom_task_1 5
+custom_task_2 3
+custom_task_3 4
