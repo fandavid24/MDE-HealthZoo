@@ -50,7 +50,15 @@
         padding: 10px;
         border-radius: 5px;
     }
+
+    .task-item:active {
+        background-color: slategray;
+    }
 </style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">HealthZoo</a>
+</nav>
 
 <body>
     <h1>Hello, Sarah! </h1>
@@ -64,12 +72,11 @@
 
     <!-- basic tasks -->
     <div class="list-container" id="task-display">
-        <div class="task-item" data-value="10" onclick="completeTask(this)">Make Bed</div>
-        <div class="task-item" data-value="5" onclick="completeTask(this)">Brush Teeth</div>
-        <div class="task-item" data-value="15" onclick="completeTask(this)">Go to School</div>
-        <div class="task-item" data-value="20" onclick="completeTask(this)">Complete Homework</div>
-        <div class="task-item" data-value="5" onclick="completeTask(this)">Clean Bedroom</div>
-        <div class="task-item" data-value="5" onclick="completeTask(this)">Brush Teeth</div>
+        <div class="task-item" tabindex="1" data-value="10" onclick="completeTask(this)">Make Bed</div>
+        <div class="task-item" tabindex="1" data-value="5" onclick="completeTask(this)">Brush Teeth</div>
+        <div class="task-item" tabindex="1" data-value="15" onclick="completeTask(this)">Go to School</div>
+        <div class="task-item" tabindex="1" data-value="20" onclick="completeTask(this)">Complete Homework</div>
+        <div class="task-item" tabindex="1" data-value="5" onclick="completeTask(this)">Clean Bedroom</div>
 
     </div>
 

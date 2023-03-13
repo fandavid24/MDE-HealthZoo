@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
           div.setAttribute('class', 'task-item');
           div.setAttribute('data-value', task_value);
           div.setAttribute('onclick', 'completeTask(this)');
+          div.setAttribute('tabindex', 1);
           div.textContent = task_body;
           container.appendChild(div);
         }
